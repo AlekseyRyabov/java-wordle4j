@@ -14,7 +14,9 @@ import java.util.Objects;
  */
 public class WordleDictionaryLoader {
 
-    public WordleDictionaryLoader() {}
+    public WordleDictionaryLoader() {
+
+    }
 
     /**
      * Загрузка словаря подходящих для игры слов из исходного файла.
@@ -26,7 +28,7 @@ public class WordleDictionaryLoader {
     public WordleDictionary load(String fileName) throws IOException {
         Wordle.LOG.println("Загрузка словаря");
         WordleDictionary dictionary = new WordleDictionary();
-        try(BufferedReader br = new BufferedReader(new FileReader(Paths.get(fileName).toString(), StandardCharsets.UTF_8))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(Paths.get(fileName).toString(), StandardCharsets.UTF_8))) {
             String word;
             while (Objects.nonNull(word = br.readLine())) {
                 if (WordleWordValidator.isValid(word)) {
