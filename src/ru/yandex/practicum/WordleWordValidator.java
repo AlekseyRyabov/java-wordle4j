@@ -8,7 +8,9 @@ import org.junit.platform.commons.util.StringUtils;
  */
 public class WordleWordValidator {
 
-    private WordleWordValidator() {}
+    private WordleWordValidator() {
+
+    }
 
     /**
      * Длина слова.
