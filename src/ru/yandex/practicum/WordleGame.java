@@ -61,7 +61,7 @@ public class WordleGame {
      * @param newSteps кол-во попыток
      */
     public void addSteps(int newSteps) {
-         steps+=newSteps;
+         steps += newSteps;
          Wordle.LOG.println("Добавлено шагов к игре - " + newSteps);
     }
 
